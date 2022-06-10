@@ -1,0 +1,349 @@
+.form-block{
+    width: 100%;
+    height: 1500px;
+    overflow: hidden;
+}
+.form-block-title{
+    width: 100%;
+    height: 10%;
+}
+.form-block-title h3{
+    font-family: "Roboto Light", sans-serif;
+    font-size: 2rem;
+    margin: 2.5% 5%;
+}
+.form-main{
+    width: 80%;
+    height: 90%;
+    margin: 0 10%;
+}
+.form-main > p{
+    font-family: raleway_c, sans-serif;
+    padding: 2.5% 0;
+}
+.form-day{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5%;
+}
+.day{
+    width: 25%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.day > input{
+    display: none;
+}
+.day > label{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: transparent;
+    transition: all 0.3s ease;
+    border: 2px whitesmoke solid;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: #282828 1px 1px 7px;
+}
+.day > label p{
+    font-family: raleway_c, sans-serif;
+}
+.day > label strong{
+    font-family: "Roboto Light", sans-serif;
+}
+.day > input:checked ~ label{
+    background-color: deepskyblue;
+    color: white;
+    border-color: deepskyblue;
+    box-shadow: deepskyblue 1px 1px 4px;
+}
+.form-time{
+    width: 40%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5%;
+}
+.time{
+    width: 45%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.time > input{
+    display: none;
+}
+.time > label{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: transparent;
+    transition: all 0.3s ease;
+    border: 2px whitesmoke solid;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: #282828 1px 1px 4px;
+}
+.time > label p{
+    font-family: "Roboto Light",sans-serif;
+}
+.time > input:checked ~ label{
+    background-color: deepskyblue;
+    color: white;
+    border-color: deepskyblue;
+    box-shadow: deepskyblue 1px 1px 4px;
+}
+.form-price{
+    width: 100%;
+    height: 25%;
+    margin-top: 2.5%;
+}
+.lines{
+    width: 100%;
+    height: 50%;
+    border-top: 2px #282828 solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.lines-title{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: raleway_c, sans-serif;
+}
+.lines-price{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 1rem;
+    color: deepskyblue;
+    font-weight: bolder;
+}
+.lines-select{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.plus{
+    width: 10%;
+    height: 30px;
+    border: 2px deepskyblue solid;
+    outline-color: deepskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: raleway_c, sans-serif;
+    font-size: 3rem;
+    color: deepskyblue;
+}
+.minus{
+    width: 10%;
+    height: 30px;
+    border: 2px deepskyblue solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: raleway_c, sans-serif;
+    font-size: 3rem;
+    color: deepskyblue;
+}
+.count{
+    width: 10%;
+    height: 20%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Light",sans-serif;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+@media screen and (max-width: 1280px){
+    .count{
+        width: 20%;
+        text-align: center;
+    }
+}
+.lines-final-price{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 1rem;
+    color: deepskyblue;
+    font-weight: bolder;
+}
+.form-itog{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.5rem;
+    border-top: 2px #282828 solid;
+    border-bottom: 2px #282828 solid;
+    padding: 2.5% 0;
+}
+.form-itog p{
+    font-family: raleway_c, sans-serif;
+}
+.form-itog input{
+    border: none;
+    outline: none;
+    font-family: "Roboto Light", sans-serif;
+    color: deepskyblue;
+    font-size: 22px;
+}
+.form-name{
+    width: 100%;
+    height: 42.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5%;
+    margin-top: 2.5%;
+}
+.form-name > *{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    font-family: raleway_c, sans-serif;
+    gap: 2.5%;
+}
+.form-name input[type='text'],
+.form-name input[type='email'],
+.form-name input[type='tel']{
+    padding: 1.5% 2.5%;
+    width: 32.5%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px black solid;
+    font-family: raleway_c, sans-serif;
+}
+.form-name input[type='text']:focus,
+.form-name input[type='email']:focus,
+.form-name input[type='tel']:focus{
+    border-radius: 5px;
+    border: 1px deepskyblue solid;
+    background-color: deepskyblue;
+    color: white;
+}
+.form-name input[type='text']:focus::placeholder,
+.form-name input[type='email']:focus::placeholder,
+.form-name input[type='tel']:focus::placeholder{
+    color: white;
+}
+.form-btn-block button{
+    padding: 1.5% 2.5%;
+    width: 32.5%;
+    transition: all 0.3s ease-in;
+    border-radius: 5px;
+    border: 1px black solid;
+}
+.form-btn-block button:hover{
+    background-color: deepskyblue;
+    outline-color: deepskyblue;
+    border-color: deepskyblue;
+    color: white;
+}
+.form-btn-block button:focus{
+    background-color: deepskyblue;
+    outline-color: deepskyblue;
+    border-color: deepskyblue;
+    color: white;
+}
+.form-check-block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.form-check-block label{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5%;
+}
+.form-check-block > p{
+    margin: 0 27.5%;
+    text-align: center;
+}
+#notification{
+    width: 30px;
+    height: 30px;
+}
+@media screen and (max-width: 420px){
+    .form-block{
+        height: 1000px;
+    }
+    .form-block-title h3{
+        font-size: 1.5rem;
+    }
+    .day{
+        width: 35%;
+    }
+    .time{
+        width: 50%;
+    }
+    .lines-title{
+        font-size: 14px;
+    }
+    .plus,
+    .minus{
+        width: 25%;
+    }
+    .form-itog input{
+        width: 30%;
+    }
+    .form-name label{
+        width: 100%;
+        font-size: 12px;
+    }
+    .form-name input[type='text'],
+    .form-name input[type='email'],
+    .form-name input[type='tel']{
+        width: 60%;
+    }
+    .form-btn-block{
+        width: 100%;
+    }
+    .form-btn-block button{
+        width: 90%;
+    }
+    .form-check-block > p{
+        width: 80%;
+        font-size: 12px;
+    }
+}

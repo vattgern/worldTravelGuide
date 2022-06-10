@@ -1,0 +1,363 @@
+@media screen and (min-width: 427px){
+    .sec__five{
+        width: 100%;
+        height: 110vh;
+        position: relative;
+        background-color: white;
+    }
+    .five__top{
+        width: 100%;
+        height: 40%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .five__top h1{
+        font-family: raleway_c, sans-serif;
+        font-size: 2rem;
+    }
+    .five__top img{
+        position: absolute;
+        right: 0;
+        bottom: -20%;
+        width: 75%;
+        height: 100%;
+        object-fit: fill;
+        z-index: 1;
+    }
+    .five__bottom{
+        position: relative;
+        width: 100%;
+        height: 60%;
+        background-image: url("../../images/main/david-marcu-78A265wPiO4-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+    .five__bottom-back{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.3);
+        z-index: 2;
+    }
+    .five__form{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 3;
+    }
+    .form__body{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 50%;
+    }
+    .form__body-textarea{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .form__body-input{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        align-items: center;
+        padding: 1%;
+        justify-content: center;
+        gap: 20%;
+    }
+    .form__body-input div{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .form__body > div > textarea{
+        width: 90%;
+        height: 90%;
+        font-family: "Roboto Light",sans-serif;
+        color: white;
+        padding: 2.5%;
+        font-size: 1rem;
+        outline: none;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.08);
+        transition: 0.3s;
+        border: 2px solid transparent;
+    }
+    .form__body > div > textarea:hover,
+    .form__body > div > textarea:focus{
+        background: transparent;
+        outline: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+    .form__body textarea::placeholder{
+        color: white;
+    }
+    .form__body input[type='text'], .form__body input[type='email']{
+        width: 60%;
+        outline: none;
+        padding: 2.5%;
+        border-radius: 40px;
+        background: rgba(255, 255, 255, 0.08);
+        color: white;
+        transition: 0.3s;
+        border: 2px solid transparent;
+    }
+    .form__body input[type='text']:focus, .form__body input[type='text']:hover,
+    .form__body input[type='email']:focus, .form__body input[type='email']:hover{
+        background: transparent;
+        outline: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+    .form__body input[type='text']::placeholder{
+        color: white;
+    }
+    .form__body label{
+        width: 10%;
+        font-family: raleway_c, sans-serif;
+        font-size: 1rem;
+        color: white;
+        margin-right: 25px;
+        text-align: center;
+    }
+    .form__body input[type='email']::placeholder{
+        color: white;
+    }
+    .form__footer{
+        width: 100%;
+        height: 50%;
+        font-family: raleway_c, sans-serif;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .form__footer button{
+        padding: .5% 2.5%;
+        border-radius: 10px;
+        outline: none;
+        color: black;
+        font-family: raleway_c, sans-serif;
+        font-size: 1rem;
+        cursor: pointer;
+        text-align: center;
+        background: white;
+        border: 1px solid white;
+        transition: all 0.4s;
+    }
+    .form__footer button:hover{
+        border: 1px solid white;
+        background: transparent;
+        color: white;
+    }
+    .form__footer p{
+        margin-top: 2.5%;
+        width: 50%;
+        text-align: center;
+        color: white;
+    }
+}
+@media screen and (max-width: 821px) and (min-width: 767px){
+    .five__top img{
+        position: absolute;
+        right: 0;
+        bottom: -40%;
+        width: 90%;
+        height: 100%;
+        object-fit: contain;
+        z-index: 1;
+    }
+}
+@media screen and (max-width: 426px) {
+    .sec__five{
+        width: 100%;
+        height: 110vh;
+        position: relative;
+        background-color: white;
+    }
+    .five__top{
+        width: 100%;
+        height: 20%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .five__top h1{
+        font-family: raleway_c, sans-serif;
+        font-size: 2rem;
+    }
+    .five__top img{
+        position: absolute;
+        right: 0;
+        bottom: -40%;
+        width: 75%;
+        height: 100%;
+        object-fit: contain;
+        z-index: 1;
+    }
+    .five__bottom{
+        position: relative;
+        width: 100%;
+        height: 80%;
+        background-image: url("../../images/main/david-marcu-78A265wPiO4-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        z-index: 1;
+    }
+    .five__bottom-back{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.3);
+        z-index: 2;
+    }
+    .five__form{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 3;
+    }
+    .form__body{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+    }
+    .form__body-textarea{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .form__body-input{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        padding: 1%;
+        justify-content: center;
+        gap: 20%;
+    }
+    .form__body-input div{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .form__body > div > textarea{
+        width: 90%;
+        height: 90%;
+        font-family: "Roboto Light",sans-serif;
+        color: white;
+        padding: 2.5%;
+        font-size: 1rem;
+        outline: none;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.08);
+        transition: 0.3s;
+        border: 2px solid transparent;
+    }
+    .form__body > div > textarea:hover,
+    .form__body > div > textarea:focus{
+        background: transparent;
+        outline: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+    .form__body textarea::placeholder{
+        color: white;
+    }
+    .form__body input[type='text'], .form__body input[type='email']{
+        width: 60%;
+        outline: none;
+        padding: 2.5%;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.08);
+        color: white;
+        transition: 0.3s;
+        border: 2px solid transparent;
+    }
+    .form__body input[type='text']:focus, .form__body input[type='text']:hover,
+    .form__body input[type='email']:focus, .form__body input[type='email']:hover{
+        background: transparent;
+        outline: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+    .form__body input[type='text']::placeholder{
+        color: white;
+    }
+    .form__body label{
+        width: 15%;
+        font-family: raleway_c, sans-serif;
+        font-size: 1rem;
+        color: white;
+        margin-right: 25px;
+        text-align: center;
+    }
+    .form__body input[type='email']::placeholder{
+        color: white;
+    }
+    .form__footer{
+        width: 100%;
+        height: 50%;
+        font-family: raleway_c, sans-serif;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .form__footer button{
+        padding: 2.5% 5%;
+        border-radius: 10px;
+        outline: none;
+        color: black;
+        font-family: raleway_c, sans-serif;
+        font-size: 1rem;
+        cursor: pointer;
+        text-align: center;
+        background: white;
+        border: 1px solid white;
+        transition: all 0.4s;
+    }
+    .form__footer button:hover{
+        border: 1px solid white;
+        background: transparent;
+        color: white;
+    }
+    .form__footer p{
+        margin-top: 2.5%;
+        width: 80%;
+        text-align: center;
+        color: white;
+        font-size: 14px;
+    }
+}

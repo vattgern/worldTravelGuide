@@ -1,0 +1,294 @@
+.info{
+    width: 100%;
+    height: 100%;
+    margin-top: 2.5%;
+}
+.info-header{
+    width: 100vw;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px #ced4db solid;
+
+    background-image: url("../../images/profile/some-space-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+.info-header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.info-name{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    z-index: 2;
+}
+.info-img{
+    margin-top: 2.5%;
+    width: 40%;
+    height: 65%;
+    border: 2px white solid;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.info-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.info-text{
+    width: 100%;
+    height: 10%;
+    margin: 5% 0;
+}
+.info-text p{
+    text-align: center;
+    font-family: raleway_c, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.info-logout{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-logout a{
+    text-decoration: none;
+    padding: 2.5% 5%;
+    margin-bottom: 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px white solid;
+    color: black;
+    background-color: white;
+    transition: all 0.4s ease;
+
+    font-family: raleway_c, sans-serif;
+    font-weight: bolder;
+}
+.info-logout a:hover{
+    color: white;
+    background-color: transparent;
+}
+
+.info-data{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0;
+    gap: 10px;
+    /*background-image: url("../../images/for-profile/back-profile.jpg");*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    position: relative;
+    color: white;
+}
+/*.info-data::before{*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background-color: rgba(0,0,0,0.5);*/
+/*    z-index: 1;*/
+/*}*/
+.info-data *{
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+.info-data > div{
+    width: 40%;
+    height: 100px;
+    align-items: center;
+}
+.info-login{
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    font-family: "Roboto Light", sans-serif;
+}
+.info-login p:first-child{
+    font-family: raleway_c, sans-serif;
+    margin-right: 2.5%;
+}
+.info-password{
+    display: flex;
+    flex-direction: row;
+    font-family: raleway_c, sans-serif;
+    font-size: 24px;
+}
+.info-password p{
+    margin-right: 2.5%;
+}
+.info-password input{
+    outline: none;border: none;
+    font-size: 24px;
+    width: 45%;
+    background: transparent;
+}
+.info-password-view{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.info-mail{
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    font-family: "Roboto Light", sans-serif;
+}
+.info-mail p:first-child{
+    font-family: raleway_c, sans-serif;
+    margin-right: 2.5%;
+}
+
+.info-requests{
+    width: 100vw;
+    height: 50%;
+    margin: 2.5% 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 50px;
+}
+.request{
+    width: 400px;
+    height: 275px;
+    border: 2px #ced4db solid;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.request-img{
+    width: 100%;
+    height: 60%;
+}
+.request-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.request-title{
+    width: 97.5%;
+    height: 20%;
+    margin-left: 2.5%;
+    font-family: raleway_c, sans-serif;
+    font-size: 14px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.request-btn{
+    width: 97.5%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2.5%;
+}
+.request-btn a{
+    text-decoration: none;
+    font-family: raleway_c, sans-serif;
+    font-size: 14px;
+    color: white;
+    padding: 2.5% 5%;
+    background-color: darkred;
+    border-radius: 10px;
+    border: 2px darkred solid;
+    transition: all 0.4s ease;
+}
+.request-btn a:hover{
+    background-color: white;
+    color: darkred;
+}
+
+@media screen and (max-width: 1360px) and (min-width: 1023px){
+    .info-data > div{
+        font-size: 18px;
+    }
+    .info-data input{
+        font-size: 18px;
+    }
+    .info-requests{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 1022px) and (min-width: 767px){
+    .info-name{
+        margin: auto 0;
+    }
+    .info-data > div{
+        font-size: 15px;
+    }
+    .info-data input{
+        font-size: 16px;
+    }
+    .info-requests{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .request{
+        width: 350px;
+        height: 275px;
+    }
+}
+@media screen and (max-width: 766px){
+    .info-header{
+        flex-direction: column;
+        background-image: url("../../images/profile/some-space.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .info-name{
+        width: 100vw;
+        height: 50%;
+    }
+    .info-data{
+        height: 50%;
+        width: 100vw;
+    }
+    .info-data > div{
+        width: 90%;
+    }
+    .info-requests{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .request{
+        width: 350px;
+        height: 275px;
+    }
+}

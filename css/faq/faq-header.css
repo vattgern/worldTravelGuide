@@ -1,0 +1,355 @@
+.exit{
+    display: none;
+}
+@media screen and (min-width: 1600px){
+    header{
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    header nav{
+        width: 100vw;
+        height: 15%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 4;
+    }
+    .header__logo{
+        width: 30vw;
+        height: 100%;
+        position: relative;
+        z-index: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__logo img{
+        margin-top: 10%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+    .header__list{
+        width: 30vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        transition: all 0.4s ease-in-out;
+        transform: translateX(100%);
+        appearance: none;
+    }
+    .header__list._active{
+        transform: translateX(-10%);
+        appearance: auto;
+    }
+    .header__list a{
+        text-decoration: none;
+        color: white;
+        font-family: raleway_c, sans-serif;
+        font-size: calc(14px + 4 * (100vw / 1280));
+        background-image: linear-gradient(
+                transparent 0%,
+                transparent 90%,
+                white 90%,
+                white 100%
+        );
+        background-repeat: no-repeat;
+
+        background-size: 0 100%;
+        background-position-x: right;
+
+        transition:  all 300ms;
+    }
+    .header__list a:hover{
+        background-size: 100% 100%;
+        background-position-x: left;
+    }
+    .header__body{
+        width: 100vw;
+        height: 92.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 4;
+    }
+    .header__title{
+        font-size: calc(12px + 16 * (100vw / 1280));
+        color: black;
+        font-family: raleway_c, sans-serif;
+        font-weight: 100;
+        transition: all .4s ease-in;
+        transform: translateY(150%);
+        opacity: 0;
+    }
+    .header__title._active{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    .header__back{
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+        width: 90%;
+        height: 100%;
+        background-image: url("../../images/moscow/moscow.png");
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (min-width: 1366px) and (max-width: 1599px){
+    header{
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    header nav{
+        width: 100vw;
+        height: 15%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 4;
+    }
+    .header__logo{
+        width: 30vw;
+        height: 100%;
+        position: relative;
+        z-index: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__logo img{
+        margin-top: 10%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+    .header__list{
+        width: 30vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        transition: all 0.4s ease-in-out;
+        transform: translateX(100%);
+        appearance: none;
+    }
+    .header__list._active{
+        transform: translateX(-10%);
+        appearance: auto;
+    }
+    .header__list a{
+        text-decoration: none;
+        color: black;
+        font-family: raleway_c, sans-serif;
+        font-size: calc(14px + 4 * (100vw / 1280));
+        background-image: linear-gradient(
+                transparent 0%,
+                transparent 90%,
+                black 90%,
+                black 100%
+        );
+        background-repeat: no-repeat;
+
+        background-size: 0 100%;
+        background-position-x: right;
+
+        transition:  all 300ms;
+    }
+    .header__list a:hover{
+        background-size: 100% 100%;
+        background-position-x: left;
+    }
+    .header__body{
+        width: 100vw;
+        height: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 4;
+    }
+    .header__title{
+        font-size: calc(12px + 16 * (100vw / 1280));
+        color: black;
+        font-family: raleway_c, sans-serif;
+        font-weight: 100;
+        transition: all .4s ease-in;
+        transform: translateY(150%);
+        opacity: 0;
+    }
+    .header__title._active{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    .header__back{
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+        width: 90%;
+        height: 100%;
+        background-image: url("../../images/moscow/moscow.png");
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width: 1365px){
+    header{
+        width: 100%;
+        height:10vh;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        flex-direction: column;
+        position: relative;
+    }
+    /* == ШАПКА == */
+    /* =========== */
+    header nav{
+        width: 100%;
+        height: 7.5%;
+        background-color: rgba(0, 0, 0, 0.75);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    .header__logo{
+        width: 30%;
+        height: 100%;
+    }
+    .header__logo img{
+        margin-top: 2.5%;
+        width: 95px;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .header__list__burger{
+        position: absolute;
+        top: 50%;
+        right: 2.5%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        cursor: pointer;
+        transform: translateY(-50%);
+    }
+    .header__list__burger > div{
+        width: 100%;
+        height: 10%;
+        background-color: white;
+    }
+    #burger-menu{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: black;
+        align-items: center;
+        transition: all 0.4s ease;
+        z-index: 10;
+    }
+    #burger-menu:not(:target) {
+        right: -110%;
+    }
+    #burger-menu:target {
+        right: 0;
+    }
+    #burger-menu li a{
+        text-decoration: none;
+        color: white;
+        font-family: raleway_c, sans-serif;
+    }
+    .exit{
+        position: absolute;
+        top: 2.5%;
+        right: 2.5%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .exit div{
+        width: 100%;
+        height: 10%;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-50%,-50%);
+    }
+    .exit div:nth-child(1){
+        transform: rotate(45deg);
+    }
+    .exit div:nth-child(2){
+        transform: rotate(-45deg);
+    }
+    .header__body{
+        width: 100vw;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 4;
+    }
+    .header__title{
+        font-size: calc(12px + 16 * (100vw / 1280));
+        color: white;
+        font-family: raleway_c, sans-serif;
+        font-weight: 100;
+        transition: all .4s ease-in;
+        transform: translateY(150%);
+        opacity: 0;
+    }
+    .header__title._active{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    .header__back{
+        position: absolute;
+        bottom: 0;
+        left: 2.5%;
+        width: 95%;
+        height: 100%;
+        background-image: url("../../images/moscow/moscow.png");
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width: 426px){
+    .header__logo img{
+        width: 70px;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}

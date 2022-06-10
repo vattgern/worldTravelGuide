@@ -1,0 +1,274 @@
+.sec__four{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    background-image: url("../../images/main/for-ques-block.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.ques__back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+.ques__title{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+.ques__title h2{
+    font-family: raleway_c,sans-serif;
+    font-size: 2rem;
+}
+.ques__body{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.ques__cards{
+    width: 17.5%;
+    height: 50%;
+    border: 2px black solid;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+}
+.ques__card__title{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Bahnschrift,sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.ques__card__title p{
+    font-family: raleway_c, sans-serif;
+    padding: 0 5%;
+    line-height: 1.5rem;
+    font-size: calc(12px + 16 * (100vw - 1280));
+}
+.ques__card__link{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+.ques__card__link a{
+    text-decoration: none;
+    color: white;
+    font-family: raleway_c,sans-serif;
+    font-size: calc(12px + 8 * (100vw - 1280));
+}
+.ques__footer{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.ques__footer a{
+    color: white;
+    font-family: raleway_c,sans-serif;
+    transform: translate(50%,50%);
+    text-decoration: none;
+    border: 1px white solid;
+    padding: 0.5% 2.5%;
+}
+.ques__footer a{
+    padding: 0.75% 2.5%;
+    text-decoration: none;
+    color: white;
+    font-family: raleway_c,sans-serif;
+    border: 1px white solid;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+    font-size: 1rem;
+}
+.ques__footer a .left_hover{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: black;
+    transition: all 0.4s ease-out;
+    z-index: 2;
+}
+.ques__footer a .right_hover{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: black;
+    transition: all 0.4s ease-out;
+    z-index: 2;
+}
+.ques__footer a span{
+    transition: all .4s ease-in-out;
+}
+.ques__footer a:hover span{
+    color: white;
+    position: relative;
+    z-index: 5;
+}
+.ques__footer a:hover{
+    border-color: black;
+}
+.ques__footer a:hover .left_hover{
+    width: 100%;
+}
+.ques__footer a:hover .right_hover{
+    width: 100%;
+}
+
+@media screen and (max-width: 1281px) and (min-width: 427px){
+    .ques__cards{
+        height: 40%;
+        width: 20%;
+    }
+}
+@media screen and (max-width: 821px) and (min-width: 819px){
+    .sec__four{
+        height: 60vh;
+    }
+    .ques__cards{
+        height: 35%;
+        font-size: 12px;
+    }
+    .ques__footer a{
+        padding: 1% 2.5%;
+    }
+}
+@media screen and (max-width: 769px) and (min-width: 767px){
+    .sec__four{
+        height: 60vh;
+    }
+    .ques__cards{
+        height: 40%;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 426px) {
+    .sec__four{
+        width: 100vw;
+        height: 150vh;
+        background-color: white;
+        background-image: url("../../images/main/for-ques-block.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        background-attachment: fixed;
+    }
+    .ques__back{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+    .ques__title{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        position: relative;
+        z-index: 2;
+    }
+    .ques__title h2{
+        font-family: raleway_c,sans-serif;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .ques__body{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        color: white;
+    }
+    .ques__cards{
+        width: 60%;
+        height: 250px;
+        margin: 5% 0;
+        border: 2px black solid;
+        background-color: transparent;
+        backdrop-filter: blur(4px);
+        border-radius: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    .ques__card__title{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Bahnschrift,sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+    .ques__card__title p{
+        font-family: raleway_c, sans-serif;
+        padding: 0 5%;
+        line-height: 1.5rem;
+        font-size: calc(12px + 16 * (100vw - 1280));
+    }
+    .ques__card__link{
+        width: 100%;
+        height: 30%;
+        text-align: center;
+    }
+    .ques__card__link a{
+        text-decoration: none;
+        color: white;
+        font-family: raleway_c,sans-serif;
+        font-size: calc(12px + 8 * (100vw - 1280));
+    }
+    .ques__footer{
+        margin-top: 10%;
+        width: 100vw;
+        height: 10%;
+        position: relative;
+        z-index: 2;
+    }
+    .ques__footer a{
+        color: white;
+        font-family: raleway_c,sans-serif;
+        text-decoration: none;
+        border: 1px black solid;
+        padding: 2.5% 5%;
+    }
+}

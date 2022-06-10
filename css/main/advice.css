@@ -1,0 +1,365 @@
+.sec__three{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+.three__title{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.three__title h2{
+    font-family: raleway_c,sans-serif;
+    font-size: 2rem;
+}
+.three__body{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*gap: 1rem;*/
+}
+.left__btn{
+    width: 10%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+}
+.left__btn img{
+    transform: rotate(180deg);
+    transition: all 0.4s ease-in;
+}
+.left__btn:hover img{
+    transform: scale(0.85) rotate(180deg);
+}
+.right__btn{
+    width: 10%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+}
+.right__btn img{
+    transition: all 0.4s ease-in;
+}
+.right__btn:hover img{
+    transform: scale(0.85);
+}
+.advice__window{
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    gap: 2rem;
+}
+.advice__item{
+    min-width: 31%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    user-select: contain;
+    transition: all 0.4s ease;
+}
+.advice__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+.advice__img::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.35);
+    z-index: 4;
+    border-radius: 20px;
+}
+.advice__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.advice__title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+
+    font-family: "Roboto Light",sans-serif;
+    text-align: center;
+    margin: 0 10%;
+}
+.advice__btn{
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 25%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.advice__btn a{
+    text-decoration: none;
+    color: white;
+    font-family: raleway_c,sans-serif;
+}
+.advice__item:hover .advice__btn{
+    bottom: 0;
+    opacity: 1;
+}
+.three__footer{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.three__footer a{
+    padding: 0.5% 2.5%;
+    border: 1px black solid;
+    text-decoration: none;
+    color: black;
+    font-family: raleway_c, sans-serif;
+    transition: all .4s ease-in-out;
+}
+.three__footer a:hover{
+    border-style: dashed;
+}
+@media screen and (max-width: 1280px) and (min-width: 1025px){
+    .advice__window{
+        gap: 1.75rem;
+    }
+    .advice__item{
+        min-width: 31%;
+        height: 75%;
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 821px){
+    .sec__three{
+        height: 500px;
+    }
+    .three__title h2{
+        font-size: 36px;
+    }
+    .advice__window{
+        gap: 2rem;
+    }
+    .advice__item{
+        min-width: 30%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 820px) {
+    .advice__window{
+        gap: 20px;
+    }
+    .advice__item{
+        min-width: 100%;
+        height: 100%;
+    }
+    .advice__title{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 426px){
+    .sec__three{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    }
+    .three__title{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .three__title h2{
+        font-family: raleway_c,sans-serif;
+        font-size: 2rem;
+    }
+    .three__body{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /*gap: 1rem;*/
+    }
+    .left__btn{
+        width: 10%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        z-index: 3;
+    }
+    .left__btn img{
+        transform: rotate(180deg);
+        transition: all 0.4s ease-in;
+    }
+    .left__btn:hover img{
+        transform: scale(0.85) rotate(180deg);
+    }
+    .right__btn{
+        width: 10%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        z-index: 3;
+    }
+    .right__btn img{
+        transition: all 0.4s ease-in;
+    }
+    .right__btn:hover img{
+        transform: scale(0.85);
+    }
+    .advice__window{
+        width: 80%;
+        height: 50%;
+        overflow: hidden;
+    }
+    .advice__list{
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: row;
+        transition: all 0.4s ease-in-out;
+    }
+    .advice__item{
+        min-width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        cursor: pointer;
+        color: white;
+        user-select: contain;
+    }
+    .advice__img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+    }
+    .advice__img::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.35);
+        z-index: 4;
+        border-radius: 20px;
+    }
+    .advice__img img{
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+    .advice__title{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+
+        font-family: "Roboto Light",sans-serif;
+        text-align: center;
+        margin: 0 10%;
+    }
+    .advice__btn{
+        position: absolute;
+        left: 0;
+        bottom: -100%;
+        width: 100%;
+        height: 25%;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .advice__btn a{
+        text-decoration: none;
+        color: white;
+        font-family: raleway_c,sans-serif;
+    }
+    .advice__item:hover .advice__btn{
+        bottom: 0;
+        opacity: 1;
+    }
+    .three__footer{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .three__footer a{
+        padding: 2.5% 5%;
+        border: 1px black solid;
+        text-decoration: none;
+        color: black;
+        font-family: raleway_c, sans-serif;
+        transition: all .4s ease-in-out;
+    }
+    .three__footer a:hover{
+        border-style: dashed;
+    }
+}

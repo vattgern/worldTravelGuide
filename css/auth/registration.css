@@ -1,0 +1,600 @@
+body{
+    width: 100%;
+    height: 100vh;
+}
+@media screen and (min-width: 1600px){
+    .for-registration{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../../images/auth/pexels-quintin-gellar-844167.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .for-registration::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.65);
+        z-index: 2;
+    }
+    .registration{
+        width: 50%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 3;
+    }
+    .registration__title{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: raleway_c, sans-serif;
+        font-size: 2rem;
+        font-weight: 100;
+        color: white;
+    }
+    .registration__body{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .registration__body input[type='text'],
+    input[type='email'], input[type='password']{
+        width: 50%;
+        height: 50px;
+        padding: 2.5%;
+        border-radius: 40px;
+        background: rgba(255, 255, 255, 0.08);
+        color: white;
+        transition: 0.3s;
+        border: 2px solid transparent;
+    }
+    .registration__body input:hover, .registration__body input:focus {
+        background: transparent;
+        outline: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+    .registration__body input:focus {
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+    input::placeholder{
+        color: white;
+    }
+    .registration__body button{
+        text-align: center;
+        outline-color: rgba(224, 113, 41, 1);;
+        border-color: rgba(224, 113, 41, 1);;
+        font-size: 1rem;
+        background-color: rgba(224, 113, 41, 1);;
+        cursor: pointer;
+        width: 50%;
+        height: 50px;
+        border-radius: 40px;
+        font-family: raleway_c, sans-serif;
+        font-weight: 400;
+        color: #fff;
+        transition: all 0.4s;
+    }
+    .registration__body button:hover{
+        border: 1px solid rgba(224, 113, 41, 1);
+        background: transparent;
+        color: rgb(227, 138, 77);
+    }
+    .registration__body > div{
+        width: 50%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .registration__body > div > div{
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+    }
+    #isPolicy{
+        width: 20%;
+        height: 20%;
+        position: relative;
+        appearance: none;
+    }
+    #isPolicy::before{
+        content: '';
+        position: absolute;
+        top: -15%;
+        left: 0;
+        width: 25px;
+        height: 25px;
+        border: 2px white solid;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: raleway_c, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: white;
+        transition: all 0.4s ease-in-out;
+    }
+    #isPolicy:checked::before{
+        border-color: rgba(224, 113, 41, 1);
+        background-color: rgba(224, 113, 41, 1);
+    }
+    .registration__body > div > div label{
+        font-size: 1rem;
+        font-family: "Roboto Light", sans-serif;
+        color: white;
+    }
+    .registration__body > div > a{
+        text-decoration: none;
+        font-size: 1rem;
+        color: white;
+        font-family: raleway_c, sans-serif;
+        cursor: pointer;
+    }
+}
+@media screen and (min-width: 1366px) and (max-width: 1599px){
+    .for-registration{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../../images/auth/pexels-quintin-gellar-844167.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .for-registration::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+    }
+    .registration{
+        width: 50%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+    }
+    .registration__title{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: raleway_c, sans-serif;
+        font-size: 2rem;
+        font-weight: 100;
+        color: white;
+    }
+    .registration__body{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .registration__body input[type='text'],
+    input[type='email'], input[type='password']{
+        width: 50%;
+        height: 50px;
+        padding: 2.5%;
+        border-radius: 40px;
+        background: rgba(255, 255, 255, 0.08);
+        color: white;
+        transition: 0.3s;
+        border: 2px solid transparent;
+    }
+    .registration__body input:hover, .registration__body input:focus {
+        background: transparent;
+        outline: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+    .registration__body input:focus {
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+    input::placeholder{
+        color: white;
+    }
+    .registration__body button{
+        text-align: center;
+        outline-color: rgba(224, 113, 41, 1);;
+        border-color: rgba(224, 113, 41, 1);;
+        font-size: 1rem;
+        background-color: rgba(224, 113, 41, 1);;
+        cursor: pointer;
+        width: 50%;
+        height: 50px;
+        border-radius: 40px;
+        font-family: raleway_c, sans-serif;
+        font-weight: 400;
+        color: #fff;
+        transition: all 0.4s;
+    }
+    .registration__body button:hover{
+        border: 1px solid rgba(224, 113, 41, 1);
+        background: transparent;
+        color: rgb(227, 138, 77);
+    }
+    .registration__body > div{
+        width: 50%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .registration__body > div > div{
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+    }
+    #isPolicy{
+        width: 20%;
+        height: 20%;
+        position: relative;
+        appearance: none;
+    }
+    #isPolicy::before{
+        content: '';
+        position: absolute;
+        top: -15%;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        border: 2px white solid;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: raleway_c, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: white;
+        transition: all 0.4s ease-in-out;
+    }
+    #isPolicy:checked::before{
+        border-color: rgba(224,113,41,1);
+        background-color: rgba(224, 113, 41, 1);
+    }
+    .registration__body > div > div label{
+        font-size: 1rem;
+        font-family: "Roboto Light", sans-serif;
+        color: white;
+    }
+    .registration__body > div > a{
+        text-decoration: none;
+        font-size: 1rem;
+        color: white;
+        font-family: raleway_c, sans-serif;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 1365px) and (min-width: 760.5px){
+    .for-registration{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../../images/auth/pexels-quintin-gellar-844167.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .for-registration::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+    }
+    .registration{
+        width: 75%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+    }
+    .registration__title{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: raleway_c, sans-serif;
+        font-size: 1rem;
+        font-weight: 100;
+        color: white;
+    }
+    .registration__body{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1rem;
+        align-items: center;
+    }
+    .registration__body input[type='text'],
+    input[type='email'], input[type='password']{
+        width: 50%;
+        height: 50px;
+        padding: 2.5%;
+        border-radius: 40px;
+        background: rgba(255, 255, 255, 0.08);
+        color: white;
+        transition: 0.3s;
+        border: 2px solid transparent;
+    }
+    .registration__body input:hover, .registration__body input:focus {
+        background: transparent;
+        outline: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+    .registration__body input:focus {
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+    input::placeholder{
+        color: white;
+    }
+    .registration__body button{
+        text-align: center;
+        outline-color: rgba(224, 113, 41, 1);;
+        border-color: rgba(224, 113, 41, 1);;
+        font-size: 1rem;
+        background-color: rgba(224, 113, 41, 1);;
+        cursor: pointer;
+        width: 50%;
+        height: 50px;
+        border-radius: 40px;
+        font-family: raleway_c, sans-serif;
+        font-weight: 400;
+        color: #fff;
+        transition: all 0.4s;
+    }
+    .registration__body button:hover{
+        border: 1px solid rgba(224, 113, 41, 1);
+        background: transparent;
+        color: rgb(227, 138, 77);
+    }
+    .registration__body > div{
+        width: 50%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .registration__body > div > div{
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+    }
+    #isPolicy{
+        width: 20%;
+        height: 20%;
+        position: relative;
+        appearance: none;
+    }
+    #isPolicy::before{
+        content: '';
+        position: absolute;
+        top: -15%;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        border: 2px white solid;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: raleway_c, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: white;
+        transition: all 0.4s ease-in-out;
+    }
+    #isPolicy:checked::before{
+        border-color: rgba(224, 113, 41, 1);
+        background-color: rgba(224, 113, 41, 1);
+    }
+    .registration__body > div > div label{
+        font-size: 1rem;
+        font-family: "Roboto Light", sans-serif;
+        color: white;
+    }
+    .registration__body > div > a{
+        text-decoration: none;
+        font-size: 1rem;
+        color: white;
+        font-family: raleway_c, sans-serif;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 760px) {
+    .for-registration{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../../images/auth/pexels-quintin-gellar-844167.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .for-registration::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+    }
+    .registration{
+        width: 75%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+    }
+    .registration__title{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: raleway_c, sans-serif;
+        font-size: 1rem;
+        font-weight: 100;
+        color: white;
+    }
+    .registration__body{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .registration__body input[type='text'],
+    input[type='email'], input[type='password']{
+        width: 100%;
+        height: 50px;
+        padding-left: 5%;
+        border-radius: 40px;
+        background: rgba(255, 255, 255, 0.08);
+        color: white;
+        transition: 0.3s;
+        border: 2px solid transparent;
+    }
+    .registration__body input:hover, .registration__body input:focus {
+        background: transparent;
+        outline: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+    .registration__body input:focus {
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+    input::placeholder{
+        color: white;
+    }
+    .registration__body button{
+        text-align: center;
+        outline-color: rgba(224, 113, 41, 1);;
+        border-color: rgba(224, 113, 41, 1);;
+        font-size: 1rem;
+        background-color: rgba(224, 113, 41, 1);;
+        cursor: pointer;
+        width: 100%;
+        height: 50px;
+        border-radius: 40px;
+        font-family: raleway_c, sans-serif;
+        font-weight: 400;
+        color: #fff;
+        transition: all 0.4s;
+    }
+    .registration__body button:hover{
+        border: 1px solid rgba(224, 113, 41, 1);
+        background: transparent;
+        color: rgb(227, 138, 77);
+    }
+    .registration__body > div{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .registration__body > div > div{
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+    }
+    #isPolicy{
+        width: 20%;
+        height: 20%;
+        position: relative;
+        appearance: none;
+    }
+    #isPolicy::before{
+        content: '';
+        position: absolute;
+        top: -15%;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        border: 2px white solid;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: raleway_c, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: white;
+        transition: all 0.4s ease-in-out;
+    }
+    #isPolicy:checked::before{
+        border-color: rgba(224, 113, 41, 1);
+        background-color: rgba(224, 113, 41, 1);
+    }
+    .registration__body > div > div label{
+        font-size: 1rem;
+        font-family: "Roboto Light", sans-serif;
+        color: white;
+    }
+    .registration__body > div > a{
+        text-decoration: none;
+        font-size: 1rem;
+        color: white;
+        font-family: raleway_c, sans-serif;
+        cursor: pointer;
+    }
+}
+input::placeholder{
+    color: white;
+}

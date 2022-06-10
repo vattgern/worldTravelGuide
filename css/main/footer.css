@@ -1,0 +1,449 @@
+.footer-two{
+    position: relative;
+    z-index: 4;
+}
+.footer-two a {
+    text-decoration: none;
+    color: white;
+}
+@media screen and (min-width: 1600px){
+    footer{
+        width: 100%;
+        height: 400px;
+        background-color: #282828;
+        display: grid;
+        color: white;
+        grid-template-columns: repeat(9,1fr);
+        grid-template-rows: repeat(6,1fr);
+        position: relative;
+    }
+    .footer-one{
+        grid-column: 1/4;
+        grid-row: 1/6;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-one h2{
+        font-family: raleway_c, sans-serif;
+        font-size: 3rem;
+        font-weight: 100;
+    }
+    .footer-one p{
+        font-family: "JetBrains Mono", monospace;
+        font-size: 1rem;
+    }
+    .footer-two{
+        grid-column: 4/6;
+        grid-row: 1/5;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-two p{
+        font-family: raleway_c, sans-serif;
+        font-size: 2rem;
+        margin-top: 5%;
+    }
+    .footer-two ul{
+        list-style: none;
+        font-family: "JetBrains Mono", monospace;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer-three{
+        grid-column: 6/8;
+        grid-row: 1/4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .footer-three p{
+        font-size: 2rem;
+        font-family: raleway_c, sans-serif;
+    }
+    .footer-three ul {
+        list-style:none;
+        text-align: center;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 1rem;
+    }
+    .footer-four{
+        grid-column: 8/10;
+        grid-row: 1/5;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer-four p{
+        font-size: 2rem;
+        font-family: raleway_c, sans-serif;
+        margin-top: 2.5%;
+    }
+    .footer-four ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        list-style: none;
+        font-family: "JetBrains Mono", monospace;
+    }
+    .footer-doc{
+        grid-column: 4/10;
+        grid-row: 4/6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+    .footer-doc a{
+        text-decoration: none;
+        font-family: raleway_c, sans-serif;
+        color: white;
+    }
+    .footer-footer{
+        grid-column: 1/10;
+        grid-row: 6/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: raleway_c, sans-serif;
+    }
+}
+@media screen and (min-width: 1366px) and (max-width: 1599px){
+    footer{
+        width: 100%;
+        height: 400px;
+        background-color: #282828;
+        display: grid;
+        color: white;
+        grid-template-columns: repeat(9,1fr);
+        grid-template-rows: repeat(6,1fr);
+        position: relative;
+    }
+    .footer-one{
+        grid-column: 1/4;
+        grid-row: 1/6;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-one h2{
+        font-family: raleway_c, sans-serif;
+        font-size: 3rem;
+        font-weight: 100;
+    }
+    .footer-one p{
+        font-family: "JetBrains Mono", monospace;
+        font-size: 1rem;
+    }
+    .footer-two{
+        grid-column: 4/6;
+        grid-row: 1/5;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-two p{
+        font-family: raleway_c, sans-serif;
+        font-size: 2rem;
+        margin-top: 5%;
+    }
+    .footer-two ul{
+        list-style: none;
+        font-family: "JetBrains Mono", monospace;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer-three{
+        grid-column: 6/8;
+        grid-row: 1/4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .footer-three p{
+        font-size: 2rem;
+        font-family: raleway_c, sans-serif;
+    }
+    .footer-three ul {
+        list-style:none;
+        text-align: center;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 1rem;
+    }
+    .footer-four{
+        grid-column: 8/10;
+        grid-row: 1/5;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer-four p{
+        font-size: 2rem;
+        font-family: raleway_c, sans-serif;
+        margin-top: 2.5%;
+    }
+    .footer-four ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        list-style: none;
+        font-family: "JetBrains Mono", monospace;
+    }
+    .footer-doc{
+        grid-column: 4/10;
+        grid-row: 4/6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+    .footer-doc a{
+        text-decoration: none;
+        font-family: raleway_c, sans-serif;
+        color: white;
+    }
+    .footer-footer{
+        grid-column: 1/10;
+        grid-row: 6/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: raleway_c, sans-serif;
+    }
+}
+@media screen and (min-width: 651px) and (max-width: 1365px){
+    footer{
+        width: 100%;
+        height: 450px;
+        background-color: #282828;
+        display: grid;
+        color: white;
+        grid-template-columns: repeat(9,1fr);
+        grid-template-rows: repeat(6,1fr);
+        position: relative;
+    }
+    .footer-one{
+        grid-column: 1/4;
+        grid-row: 1/6;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5%;
+    }
+    .footer-one h2{
+        font-family: raleway_c, sans-serif;
+        font-size: 3rem;
+        font-weight: 100;
+    }
+    .footer-one p{
+        font-family: "JetBrains Mono", monospace;
+        font-size: 1rem;
+        margin: 15% 0;
+    }
+    .footer-two{
+        grid-column: 4/6;
+        grid-row: 1/5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5%;
+    }
+    .footer-two p{
+        font-family: raleway_c, sans-serif;
+        font-size: 2rem;
+        padding-top: 5%;
+    }
+    .footer-two ul{
+        list-style: none;
+        font-family: "JetBrains Mono", monospace;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .footer-three{
+        grid-column: 6/8;
+        grid-row: 1/4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5%;
+    }
+    .footer-three p{
+        font-size: 2rem;
+        font-family: raleway_c, sans-serif;
+        padding-top: 5%;
+    }
+    .footer-three ul {
+        list-style:none;
+        text-align: center;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-four{
+        grid-column: 8/10;
+        grid-row: 1/5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 5%;
+        gap: 5%;
+    }
+    .footer-four p{
+        font-size: 2rem;
+        font-family: raleway_c, sans-serif;
+        padding-top: 5%;
+    }
+    .footer-four ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        list-style: none;
+        font-family: "JetBrains Mono", monospace;
+    }
+    .footer-doc{
+        grid-column: 4/10;
+        grid-row: 4/6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+    .footer-doc a{
+        text-decoration: none;
+        font-family: raleway_c, sans-serif;
+        color: white;
+    }
+    .footer-footer{
+        grid-column: 1/10;
+        grid-row: 6/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: raleway_c, sans-serif;
+    }
+}
+@media screen and (max-width: 650px){
+    footer{
+        width: 100%;
+        height: 100vh;
+        background-color: #282828;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    .footer-one{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-direction: column;
+    }
+    .footer-one h2{
+        font-family: raleway_c, sans-serif;
+        font-size: 3rem;
+        font-weight: 100;
+    }
+    .footer-one p{
+        font-family: "JetBrains Mono", monospace;
+        font-size: 1rem;
+    }
+    .footer-two{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-two p{
+        font-family: raleway_c, sans-serif;
+        font-size: 2rem;
+        margin-top: 5%;
+    }
+    .footer-two ul{
+        list-style: none;
+        font-family: "JetBrains Mono", monospace;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer-three{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .footer-three p{
+        font-size: 2rem;
+        font-family: raleway_c, sans-serif;
+    }
+    .footer-three ul {
+        list-style:none;
+        text-align: center;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 1rem;
+    }
+    .footer-four{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer-four p{
+        font-size: 2rem;
+        font-family: raleway_c, sans-serif;
+        margin-top: 2.5%;
+    }
+    .footer-four ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        list-style: none;
+        font-family: "JetBrains Mono", monospace;
+    }
+    .footer-doc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        margin: 10% 0;
+    }
+    .footer-doc a{
+        text-decoration: none;
+        font-family: raleway_c, sans-serif;
+        color: white;
+    }
+    .footer-footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: raleway_c, sans-serif;
+    }
+}
